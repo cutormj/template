@@ -1,6 +1,5 @@
 import React from 'react';
 import { getUsers } from '@/actions/user-action';
-import dbConnect from '@/lib/mongo';
 
 async function Page() {
 //   dbConnect();
