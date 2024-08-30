@@ -1,34 +1,21 @@
 
-import dbConnect from "@/lib/mongodb";
-import { getUsers, addUser } from "@/actions/user-action";
+import SocialLogins from "@/components/SocialLogins";
+import dbConnect from "@/lib/mongo";
+import Link from "next/link";
+export default function Home() {
 
-export default async function Home() {
-	await dbConnect()
+  
 
-  addUser()
-	const posts = await getUsers()
-
-	console.log(posts)
-
-	return (
-		<div>
-			{posts.map(post => (
-				<div key={post._id}>
-					<h1>{post.title}</h1>
-					<p>{post.description}</p>
-				</div>
-			))}
-			{/* <form action={addPost}>
-				<div>
-					<label>Title</label>
-					<input name='title' type='text' />
-				</div>
-				<div>
-					<label>Description</label>
-					<textarea name='description' />
-				</div>
-				<button type='submit'>Submit</button>
-			</form> */}
-		</div>
-	)
+  return (
+    <div className="flex flex-col justify-center items-center m-4">
+      <h1 className="text-3xl my-3">Start Here!</h1>
+      {/* <code className="text-red-500 underline">You are in <b>Default Template</b>!</code> */}
+      <span>Portfolio</span>
+      <SocialLogins/>
+      {/* <p className="my-3">
+        Dont you have an account?
+        <Link href="register" className="mx-2 underline">Register</Link>
+      </p> */}
+    </div>
+  );
 }

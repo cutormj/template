@@ -1,10 +1,6 @@
 import mongoose from 'mongoose'
 
-const userSchema = new mongoose.Schema({
-	name:       { type: String, required: true },
-	username:   { type: String },
-    email:      { type: String, required: true },
-    image:      { type: String  },
+const portfolioSchema = new mongoose.Schema({
 
     experience: [
         {
@@ -15,7 +11,7 @@ const userSchema = new mongoose.Schema({
           description: { type: String }, // Job responsibilities and achievements
         },
       ],
-      education: [
+    education: [
         {
           institution: { type: String }, // University or school name
           degree: { type: String }, // Degree obtained (e.g., "Bachelor of Science")
@@ -23,7 +19,7 @@ const userSchema = new mongoose.Schema({
           graduationYear: { type: Number }, // Graduation year
         },
       ],
-      projects: [
+    projects: [
         {
           title: { type: String }, // Project title
           description: { type: String }, // Project description
@@ -31,6 +27,8 @@ const userSchema = new mongoose.Schema({
           url: { type: String }, // Project URL (if applicable)
         },
       ],
-})
+    } 
+      
+)
 
-export default mongoose.models.User || mongoose.model('User', userSchema)
+export default mongoose.models.Portfolio || mongoose.model('Portfolio', portfolioSchema)
