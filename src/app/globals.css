@@ -31,3 +31,42 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  :root {
+    --color-primary: #000000;
+    --color-secondary: #3b3b3b;
+    --color-text-base:  #bdbdbd;
+    --color-bg-primary:  #ffffff;
+  }
+}
+
+.theme-joke {
+  --color-primary: hsl(0, 90%, 49%);
+}
+
+.theme-cool {
+  --color-primary: #6482AD;
+  --color-secondary: #7FA1C3;
+  --color-text-base:  #E2DAD6;
+  --color-bg-primary:  #ffffff;
+}
+
+.theme-fire {
+  --color-primary: #750707;
+  --color-secondary: #a03d3d;
+  --color-text-base:  #ac8d8d;
+  --color-bg-primary:  #d4c0c0;
+}
+
+.theme-mint {
+  --color-primary: #1A5319;
+  --color-secondary: #508D4E;
+  --color-text-base:  #80AF81;
+  --color-bg-primary:  #D6EFD8;
+}
+
+/* --color-primary: #;
+    --color-secondary: #;
+    --color-text-base:  #;
+    --color-bg-primary:  #; */

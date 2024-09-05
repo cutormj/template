@@ -1,4 +1,5 @@
 
+import SampleTheme from "@/components/SampleTheme";
 import SocialLogins from "@/components/SocialLogins";
 import dbConnect from "@/lib/mongo";
 import Link from "next/link";
@@ -16,6 +17,7 @@ export default function Home() {
         Dont you have an account?
         <Link href="register" className="mx-2 underline">Register</Link>
       </p> */}
+      <SampleTheme />
     </div>
   );
 }
