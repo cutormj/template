@@ -66,6 +66,13 @@ body {
   --color-bg-primary:  #D6EFD8;
 }
 
+.theme-maink {
+  --color-primary: #921A40;
+  --color-secondary: #C75B7A;
+  --color-text-base:  #D9ABAB;
+  --color-bg-primary:  #F4D9D0;
+}
+
 /* --color-primary: #;
     --color-secondary: #;
     --color-text-base:  #;
