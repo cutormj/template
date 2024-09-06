@@ -11,7 +11,6 @@ git add .
 git commit -m "Initial commit for new project"
 git push -u origin master
 
-
 ### Create .env.local file
 
 PROJECT_NAME=""
