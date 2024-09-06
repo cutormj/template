@@ -1,3 +1,17 @@
+### HOW TO Clone Project 
+### and Upload to Different Repository
+*After cloning 
+*do the following step 
+*in VS Code Terminal
+
+Remove-Item -Recurse -Force .git
+git init
+git remote add origin <URL_of_the_new_repo>
+git add .
+git commit -m "Initial commit for new project"
+git push -u origin master
+
+
 ### Create .env.local file
 
 PROJECT_NAME=""
