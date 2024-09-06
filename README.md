@@ -1,6 +1,16 @@
-Setup MongoDB to get URI
+### Create .env.local file
 
+PROJECT_NAME=""
+DESCRIPTION=""
+DATABASE_NAME=""
 
+API_SERVER_BASE_URL=""
+AUTH_SECRET=""
+
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+
+MONGO_URI=
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
