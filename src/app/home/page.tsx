@@ -20,10 +20,18 @@ const HomePage = async () => {
     }
 
     return (
-        <div className="">
-            <NavBar user={navUser}/>
-            {/* <InitiateWebsite initiator={navUser.email} /> */}
+        <div className="grid grid-cols-12 grid-rows-8 gap-0">
+            <div className="col-span-12">
+                <NavBar user={navUser}/>
+            </div>
+            <div className="col-span-12 row-span-7 row-start-2">
+                
+            </div>
         </div>
+        // <div className="">
+        //     <NavBar user={navUser}/>
+        //     {/* <InitiateWebsite initiator={navUser.email} /> */}
+        // </div>
     );
 };
 
