@@ -2,6 +2,7 @@
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 import NavBar from "@/components/NavBar";
+import { Button } from "@nextui-org/react";
 
 const HomePage = async () => {
     const session = await auth();
@@ -20,12 +21,13 @@ const HomePage = async () => {
     }
 
     return (
-        <div className="grid grid-cols-12 grid-rows-8 gap-0">
+        <div className="theme-mint grid grid-cols-12 grid-rows-8 gap-0">
             <div className="col-span-12">
+                {/* <NavBar user={navUser}/> */}
                 <NavBar user={navUser}/>
             </div>
             <div className="col-span-12 row-span-7 row-start-2">
-                
+                <Button color="primary">Test</Button>
             </div>
         </div>
         // <div className="">
