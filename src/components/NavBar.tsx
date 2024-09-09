@@ -9,9 +9,9 @@ import {
 } from "@nextui-org/navbar";
 
 import {
-  DropdownItem,
-  DropdownTrigger,
-  Dropdown,
+  DropdownItem, 
+  DropdownTrigger, 
+  Dropdown, 
   DropdownMenu, 
 } from "@nextui-org/dropdown"
 import {Link} from "@nextui-org/link";
@@ -32,7 +32,7 @@ const NavBar: React.FC<{ user: User }> = ({ user }) => {
         <p className="font-bold text-inherit">Bio</p>
       </NavbarBrand>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
@@ -48,7 +48,7 @@ const NavBar: React.FC<{ user: User }> = ({ user }) => {
             Integrations
           </Link>
         </NavbarItem>
-      </NavbarContent>
+      </NavbarContent> */}
 
       <NavbarContent as="div" justify="end">
         <Dropdown placement="bottom-end">
@@ -86,3 +86,6 @@ const NavBar: React.FC<{ user: User }> = ({ user }) => {
 
 
 export default NavBar;
+
+
+
