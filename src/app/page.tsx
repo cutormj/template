@@ -1,23 +1,23 @@
+// pages/index.tsx
 
-import SampleTheme from "@/components/SampleTheme";
-import SocialLogins from "@/components/SocialLogins";
-import dbConnect from "@/lib/mongo";
-import Link from "next/link";
-export default function Home() {
+import React from 'react';
+import { getWebsite } from '@/actions/website-action'; // Import your getWebsite function
+import WebsiteDisplay from '@/components/WebsiteDisplay'; // Import your WebsiteDisplay component
+import SampleTheme from '@/components/SampleTheme'; // Import your SampleTheme component
 
-  
+
+export default async function Home() {
+  const websites = await getWebsite();
 
   return (
     <div className="flex flex-col justify-center items-center m-4">
-      <h1 className="text-3xl my-3">Start Here!</h1>
-      {/* <code className="text-red-500 underline">You are in <b>Default Template</b>!</code> */}
-      <span>Portfolio</span>
-      <SocialLogins/>
-      {/* <p className="my-3">
-        Dont you have an account?
-        <Link href="register" className="mx-2 underline">Register</Link>
-      </p> */}
-      <SampleTheme />
+      {/* <h1 className="text-3xl my-3">Start Here!</h1> */}
+      {/* <span>Treasure Keepsakes</span> */}
+      
+      {/* Use the WebsiteDisplay component to render the website data */}
+      <WebsiteDisplay websites={websites} />
+
+      {/* Other components or UI elements */}
     </div>
   );
 }

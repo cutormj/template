@@ -14,7 +14,6 @@ import {
   Dropdown, 
   DropdownMenu, 
 } from "@nextui-org/dropdown"
-import {Link} from "@nextui-org/link";
 import {Avatar, AvatarGroup, AvatarIcon} from "@nextui-org/avatar";
 import Logout from "./Logout";
 
@@ -29,7 +28,7 @@ const NavBar: React.FC<{ user: User }> = ({ user }) => {
     <Navbar>
       <NavbarBrand>
         {/* <AcmeLogo /> */}
-        <p className="font-bold text-inherit">Bio</p>
+        <p className="font-bold text-inherit">Treasure Keepsakes</p>
       </NavbarBrand>
 
       {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">

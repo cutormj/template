@@ -25,4 +25,6 @@ const getUsers = async () => {
 	return User.find()
 }
 
+
+
 export { addUser, getUsers, getUserByUsername }
