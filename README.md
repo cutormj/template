@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Remove-Item -Recurse -Force .git
+git init
+git remote add origin <URL_of_the_new_repo>
+git add .
+git commit -m "Initial commit for new project"
+git push -u origin master
+
 First, run the development server:
 
 ```bash
